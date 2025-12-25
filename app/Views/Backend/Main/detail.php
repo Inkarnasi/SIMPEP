@@ -1,15 +1,15 @@
-<div class="col-md-10" style="background: linear-gradient(to right, #5d8aa8, blue)">
+<div class="col-md-10" style="background-color: #F5F5DC; min-height: 100vh;">
   <div class="row">
     <div class="d-flex flex-column" >
         <div class="p-2  d-flex justify-content-between" >
           <div>
-            <i class="bi-people text-decoration-none text-light">/Anggota/Detail Anggota</i>
+            <i class="bi-people text-decoration-none" style="color: #808080;">/Anggota/Detail Anggota</i>
             <hr>
           </div>
         </div>
         <div class="p-2 flex-grow-1 ">
           <div class="d-flex justify-content-between mb-3">
-            <h2 class="text-light">Detail Anggota</h2>
+            <h2 class=" "style="color: #808080;">Detail Anggota</h2>
               <div>
                 <button class="btn btn-primary me-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Ubah</button>
                 <button class="btn btn-success me-2" style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">Bayar</button>
@@ -19,7 +19,7 @@
               <div class="row">
                 <div class="col-md-5">
                   <div class="border p-3 m-2  border-black">
-                    <pre class="text-light">
+                    <pre class="text-dark">
 Nama Lenkap       : Ahmad Rohim
 Tanggal Lahir     : 01-01-1978
 Tempat Tinggal    : JL.Margonda Raya No.201
@@ -30,7 +30,7 @@ Kode anggota      : SP023</pre>
                 </div>
                 <div class="col-md-5">
                   <div class="border p-3 m-2 border-black">
-                    <pre class="text-light">
+                    <pre class="text-dark">
 Jenis Kelamin     : Laki-laki
 No. telpon        : 0895351149499
 Email             : rohim@gmail.com

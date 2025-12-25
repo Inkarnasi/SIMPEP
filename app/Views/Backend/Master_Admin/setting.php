@@ -20,7 +20,7 @@
 				    <th data-sortable="true">#</th>
 				    <th data-sortable="true">Nama Admin</th>
 				    <th data-sortable="true">Username Admin</th>
-            <th data-sortable="true">Pangkat</th>
+
 				    <th data-sortable="true">Opsi</th>
 				</tr>
               </thead>
@@ -33,9 +33,9 @@
                         <td data-sortable="true"><?= $no=$no+1;?></td>
                         <td data-sortable="true"><?= $data['nama_admin'];?></td>
                         <td data-sortable="true"><?= $data['username_admin'];?></td>
-                        <td data-sortable="true"><?= $data['akses_level'];?></td>
+                       
                         <td data-sortable="true">
-                            <a href="<?= base_url('admin/edit-data-admin/'.sha1($data['id_admin']));?>"><button type="button" class="btn btn-sm btn-success">Edit</button></a>
+                            <a href="<?= base_url('/admin/edit_data_admin/'.sha1($data['id_admin']));?>"><button type="button" class="btn btn-sm btn-success">Edit</button></a>
                             <a href="#" onclick="doDelete('<?= sha1($data['id_admin']);?>')"><button type="button" class="btn btn-sm btn-danger">Hapus</button></a>
                         </td>
                     </tr>

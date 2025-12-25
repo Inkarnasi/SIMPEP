@@ -7,10 +7,10 @@
         <i class="bi-person-add text-decoration-none " style="color: #808080;">/Pendaftaran</i>
       </div>
         <div class="p-2 flex-grow-1 ">
-          <form role="form" method="post" action="<?= base_url('admin/post_form');?>" id="loginForm">
+          <form role="form" method="post" enctype="multipart/form-data" action="<?= base_url('admin/post_form');?>" id="loginForm">
             <div class="row">
               <div class="panel panel-default">
-                <p class="fs-4 " style="color: #808080;">Anggota Baru</p>
+              <h2 class="" style="color: #808080;"> Anggota Baru</h2>
                   <hr>
                   <?php 
                     if(session()->get('error_list')!=""){
@@ -35,7 +35,13 @@
                 <input type="text" class="form-control mb-3" name="alamat" placeholder="Alamat lengkap">
                 
                 <label for="nik" class="form-label">NIK</label>
-                <input type="text" class="form-control mb-3" name="nik" placeholder="Nomor Induk Kependudukan">
+                <input type="text" class="form-control mb-3" name="nik" placeholder="Nomor Induk Kependudukan">
+
+                <label for="bukti" class="form-label" id="atasBukti" style="display: none;">Bukti Simpanan Pokok</label>
+                <input type="file" class="form-control mb-3" id="bawahBukti" name="bukti_p" style="display: none;">
+
+                <label for="totalPinjaman" class="form-label" id="totalPinjamanLabel" style="display: none;">Berapa kali cicilan</label>
+                <input type="text" class="form-control mb-3" id="totalPinjaman" placeholder="Masukan angka saja" name="cicilan" style="display: none;">
                 
                 <div class="mb-3">
                   <button type="reset" class="btn btn-secondary">Reset</button>
@@ -47,9 +53,9 @@
               <div class="col-md-6">
                 <label for="jenisKelamin" class="form-label">Jenis Kelamin</label>
                 <select class="form-select mb-3" name="jenisKelamin">
-                  <option value="">Pilih...</option>
-                  <option value="1">Laki-laki</option>
-                  <option value="2">Perempuan</option>
+                  <option value="attack helikopter">Pilih...</option>
+                  <option value="Laki-laki">Laki-laki</option>
+                  <option value="Perempuan">Perempuan</option>
                 </select>
                 
                 <label for="noTelpon" class="form-label">No. Telpon</label>
@@ -65,10 +71,10 @@
                   <option value="P">Pinjaman</option>
                 </select>
 
-
-
                 <label for="totalPinjaman" class="form-label" id="totalPinjamanLabel" style="display: none;">Total Pinjaman</label>
                 <input type="text" class="form-control mb-3" id="totalPinjaman" placeholder="Total Pinjaman" name="totalPinjaman" style="display: none;">
+
+
               </div>
           </div>
           </form>

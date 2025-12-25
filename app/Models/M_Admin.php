@@ -7,7 +7,7 @@ class M_Admin extends Model
     protected $table = 't_admin';
  
     public function getDataAdmin($where = false)
-    {
+    {   
         if ($where === false) {
             $builder = $this->db->table($this->table);
             $builder->select('*');
